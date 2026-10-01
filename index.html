@@ -90,59 +90,106 @@
                     </li>
                     <li class="flex items-start gap-3">
                         <i data-lucide="check-circle-2" class="text-blue-400 w-6 h-6 shrink-0 mt-0.5"></i>
-                        <span><strong>Auditoria e Atividades:</strong> Veja em tempo real quem da sua equipe acabou de criar um show ou alterar um contato (Log de Atividades Recentes).</span>
+                        <span><strong>Isolamento de Dados (SaaS):</strong> Seus dados são 100% blindados sob a sua organização produtora.</span>
                     </li>
                 </ul>
             </div>
             <div class="flex-[1.2] w-full">
-                <!-- AQUI VOCÊ COLOCA A IMAGEM REAL DO DASHBOARD QUE VOCÊ ME MANDOU -->
-                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Dashboard Real" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="dashboard.png"</div>
-                    </div>
+                <div class="mockup-container bg-[#1a1f36] p-2 hover:scale-[1.02] transition-transform duration-300">
+                    <img src="assets/dashboard.png" alt="Dashboard Real" class="w-full h-auto rounded-lg border border-slate-800">
                 </div>
             </div>
         </div>
 
-        <!-- Funcionalidade 2: Casting -->
+        <!-- Funcionalidade 2: Agenda e Eventos -->
         <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div class="flex-1 space-y-6">
                 <div class="w-14 h-14 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center">
-                    <i data-lucide="mic-2" class="w-7 h-7"></i>
+                    <i data-lucide="calendar-days" class="w-7 h-7"></i>
                 </div>
-                <h3 class="text-3xl font-bold">Gestão de Casting Completa</h3>
+                <h3 class="text-3xl font-bold">Agenda e Gestão de Shows</h3>
                 <p class="text-slate-400 text-lg leading-relaxed">
-                    Arquive o portfólio completo dos seus artistas. Com suporte a fotos de perfil dinâmicas e listagem organizada, sua equipe de vendas sempre terá o material correto na hora de negociar.
+                    Cadastre cada evento unindo todas as pontas: Artista, Contratante, Vendedor, Valor, Cidade e Status dinâmico. Tudo integrado em uma única tela.
                 </p>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-purple-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Mapa de Shows e Calendário:</strong> Visualize rapidamente a malha logística de shows e datas bloqueadas.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-purple-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Tracking de Vendas:</strong> Identifique imediatamente se um show está "Em Negociação" ou com o "Contrato Assinado".</span>
+                    </li>
+                </ul>
             </div>
-            <div class="flex-[1.2] w-full">
-                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
-                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1000" alt="Lista de Artistas" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="artistas.png"</div>
+            <div class="flex-[1.2] w-full space-y-6">
+                <div class="mockup-container bg-[#1a1f36] p-2 hover:scale-[1.02] transition-transform duration-300">
+                    <img src="assets/mapa_shows.png" alt="Mapa de Shows" class="w-full h-auto rounded-lg border border-slate-800">
+                </div>
+                <div class="mockup-container bg-[#1a1f36] p-2 hover:scale-[1.02] transition-transform duration-300">
+                    <img src="assets/calendario.png" alt="Calendário" class="w-full h-auto rounded-lg border border-slate-800">
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidade 3: Financeiro Completo no Evento -->
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center">
+                    <i data-lucide="wallet" class="w-7 h-7"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Controle Financeiro Direto no Evento</h3>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    O centro financeiro vive dentro de cada show. Chega de cruzar dados de três planilhas diferentes para saber a margem de lucro de um evento.
+                </p>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Receitas e Despesas:</strong> Adicione os lançamentos, recibos de cachê e deduções financeiras referentes especificamente àquele show.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-emerald-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Anexos e Comprovantes:</strong> Anexe notas fiscais, comprovantes de PIX e os Contratos Assinados diretamente no cadastro do evento, sempre disponíveis na nuvem.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-[1.2] w-full space-y-6">
+                <div class="mockup-container bg-[#1a1f36] p-2 hover:scale-[1.02] transition-transform duration-300 relative">
+                    <div class="absolute -right-4 -bottom-4 w-32 h-32 bg-emerald-500/20 blur-[40px] rounded-full pointer-events-none"></div>
+                    <img src="assets/financeiro.png" alt="Financeiro do Evento" class="w-full h-auto rounded-lg border border-slate-800 relative z-10">
+                </div>
+                <div class="flex gap-4">
+                    <div class="mockup-container bg-[#1a1f36] p-2 flex-1 hover:scale-[1.02] transition-transform duration-300">
+                        <img src="assets/adicionar_financeiro.png" alt="Adicionar Lançamento" class="w-full h-auto rounded-lg border border-slate-800">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Funcionalidade 3: Permissões -->
-        <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Funcionalidade 4: Permissões -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
             <div class="flex-1 space-y-6">
-                <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center">
+                <div class="w-14 h-14 bg-orange-500/20 text-orange-400 rounded-2xl flex items-center justify-center">
                     <i data-lucide="shield-check" class="w-7 h-7"></i>
                 </div>
-                <h3 class="text-3xl font-bold">Segurança e Permissões de Equipe</h3>
+                <h3 class="text-3xl font-bold">Segurança e Permissões Granulares</h3>
                 <p class="text-slate-400 text-lg leading-relaxed">
-                    Você no controle. Vendedor vê apenas o calendário que interessa a ele. Financeiro tem acesso aos números globais. O dono acessa tudo. Simples assim.
+                    Crie cargos personalizados para sua equipe. Um produtor pode ter permissão apenas para ver a agenda de um Artista específico, enquanto o financeiro visualiza os relatórios globais.
                 </p>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-orange-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Auditoria de Logs:</strong> Histórico imutável de quem editou ou adicionou eventos e contratos (Log de Atividades).</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-orange-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Gestão de Contatos Dinâmica:</strong> Cadastre contratantes, fornecedores e configure opções de sistema livremente.</span>
+                    </li>
+                </ul>
             </div>
             <div class="flex-[1.2] w-full">
-                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" alt="Equipe" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="equipe.png"</div>
-                    </div>
+                <div class="mockup-container bg-[#1a1f36] p-2 hover:scale-[1.02] transition-transform duration-300">
+                    <img src="assets/configuracoes.png" alt="Configurações e Equipe" class="w-full h-auto rounded-lg border border-slate-800">
                 </div>
             </div>
         </div>
