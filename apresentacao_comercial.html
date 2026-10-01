@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPro Universal - Solução para Produtoras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-dark { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; color: transparent; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #3b82f6; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        /* Box para receber o print do usuário */
+        .mockup-container { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl">EP</div>
+                    <span class="font-bold text-xl tracking-wide">EventPro</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="text-slate-300 hover:text-white nav-link transition-colors">Início</a>
+                        <a href="#tour" class="text-slate-300 hover:text-white nav-link transition-colors">Funcionalidades</a>
+                        <a href="#planos" class="text-slate-300 hover:text-white nav-link transition-colors">Planos e Valores</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://wa.me/5562982053988" target="_blank" class="bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-lg font-semibold flex items-center gap-2 transition-all">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-40 pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-500/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-block border border-blue-500/30 bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                O Software Definitivo para Agências
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">O Controle Total da Sua <span class="gradient-text">Produtora</span></h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">Abandone planilhas confusas e mensagens perdidas. Centralize sua equipe, gerencie shows e tenha clareza financeira em tempo real.</p>
+            <div class="flex items-center justify-center gap-4">
+                <a href="#tour" class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center gap-2 border border-slate-700">
+                    <i data-lucide="play-circle"></i> Fazer o Tour
+                </a>
+                <a href="#planos" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-blue-600/30">
+                    Ver Planos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Sections (Funcionalidades) -->
+    <section id="tour" class="max-w-7xl mx-auto px-4 py-24 space-y-40">
+        
+        <div class="text-center mb-20">
+            <h2 class="text-4xl font-bold mb-4">Como o sistema funciona?</h2>
+            <p class="text-slate-400 text-lg">Desenvolvido pensando na rotina corrida de quem vende e produz shows.</p>
+        </div>
+
+        <!-- Funcionalidade 1: Dashboard Real -->
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center">
+                    <i data-lucide="layout-dashboard" class="w-7 h-7"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Dashboard Executivo</h3>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    A primeira coisa que você vê ao abrir o sistema é o coração da sua empresa. Nosso painel real traz os números que importam: Eventos Ativos, Artistas no Casting, Faturamento Previsto e Shows em Negociação.
+                </p>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-blue-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Filtros Avançados:</strong> Busque resultados rápidos por Mês, Artista específico ou Status do contrato.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="text-blue-400 w-6 h-6 shrink-0 mt-0.5"></i>
+                        <span><strong>Auditoria e Atividades:</strong> Veja em tempo real quem da sua equipe acabou de criar um show ou alterar um contato (Log de Atividades Recentes).</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-[1.2] w-full">
+                <!-- AQUI VOCÊ COLOCA A IMAGEM REAL DO DASHBOARD QUE VOCÊ ME MANDOU -->
+                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Dashboard Real" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="dashboard.png"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidade 2: Casting -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="w-14 h-14 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center">
+                    <i data-lucide="mic-2" class="w-7 h-7"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Gestão de Casting Completa</h3>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    Arquive o portfólio completo dos seus artistas. Com suporte a fotos de perfil dinâmicas e listagem organizada, sua equipe de vendas sempre terá o material correto na hora de negociar.
+                </p>
+            </div>
+            <div class="flex-[1.2] w-full">
+                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1000" alt="Lista de Artistas" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="artistas.png"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidade 3: Permissões -->
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-7 h-7"></i>
+                </div>
+                <h3 class="text-3xl font-bold">Segurança e Permissões de Equipe</h3>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    Você no controle. Vendedor vê apenas o calendário que interessa a ele. Financeiro tem acesso aos números globais. O dono acessa tudo. Simples assim.
+                </p>
+            </div>
+            <div class="flex-[1.2] w-full">
+                <div class="mockup-container bg-[#1a1f36] p-2 relative group">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" alt="Equipe" class="w-full h-auto rounded-lg border border-slate-800 opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        <div class="bg-black/80 text-white px-4 py-2 rounded-lg font-bold">Substitua por: src="equipe.png"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Divider -->
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent my-10"></div>
+
+    <!-- Preços Section -->
+    <section id="planos" class="max-w-7xl mx-auto px-4 py-24">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Planos e <span class="gradient-text">Valores</span></h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">Tabela progressiva focada no seu crescimento. Ganhe bônus ao fechar pacotes maiores.</p>
+        </div>
+
+        <div class="glass rounded-[2rem] overflow-hidden mb-16 shadow-2xl">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="bg-slate-800/80">
+                            <th class="p-6 text-lg font-semibold text-white">Pacote (Licenças)</th>
+                            <th class="p-6 text-lg font-semibold text-white">Inclusos</th>
+                            <th class="p-6 text-lg font-semibold text-white text-center">Valor Normal</th>
+                            <th class="p-6 text-lg font-bold text-blue-400 text-center">Valor de Pontualidade*</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/50">
+                        <tr class="hover:bg-slate-800/40 transition-colors">
+                            <td class="p-6 font-medium text-white">Plano Base</td>
+                            <td class="p-6 text-slate-300">1 Artista + 6 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 700,00</td>
+                            <td class="p-6 text-center font-bold text-xl text-white">R$ 600,00</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors">
+                            <td class="p-6 font-medium text-white">Até 4 Artistas <span class="ml-2 text-xs bg-blue-500/20 text-blue-400 py-1 px-2 rounded-full font-bold">10% OFF</span></td>
+                            <td class="p-6 text-slate-300">4 Artistas + 8 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 900,00</td>
+                            <td class="p-6 text-center font-bold text-xl text-white">R$ 810,00</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors">
+                            <td class="p-6 font-medium text-white">Até 5 Artistas <span class="ml-2 text-xs bg-blue-500/20 text-blue-400 py-1 px-2 rounded-full font-bold">10% OFF</span></td>
+                            <td class="p-6 text-slate-300">5 Artistas + 10 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 1.000,00</td>
+                            <td class="p-6 text-center font-bold text-xl text-white">R$ 900,00</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors">
+                            <td class="p-6 font-medium text-white">Até 6 Artistas <span class="ml-2 text-xs bg-blue-500/20 text-blue-400 py-1 px-2 rounded-full font-bold">10% OFF</span></td>
+                            <td class="p-6 text-slate-300">6 Artistas + 12 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 1.100,00</td>
+                            <td class="p-6 text-center font-bold text-xl text-white">R$ 990,00</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors bg-blue-600/10 border-l-4 border-blue-500 relative">
+                            <td class="p-6 font-medium text-white">
+                                Até 10 Artistas <span class="ml-2 text-xs bg-emerald-500/20 text-emerald-400 py-1 px-2 rounded-full font-bold">15% OFF</span>
+                                <div class="text-xs font-bold text-blue-400 mt-1 uppercase tracking-wider">★ Mais Popular</div>
+                            </td>
+                            <td class="p-6 text-slate-300">10 Artistas + 14 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 1.200,00</td>
+                            <td class="p-6 text-center font-bold text-2xl text-blue-400">R$ 1.020,00</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors">
+                            <td class="p-6 font-medium text-white">Até 20 Artistas <span class="ml-2 text-xs bg-emerald-500/20 text-emerald-400 py-1 px-2 rounded-full font-bold">15% OFF</span></td>
+                            <td class="p-6 text-slate-300">20 Artistas + 20 Usuários</td>
+                            <td class="p-6 text-center text-slate-500 line-through decoration-red-500/50">R$ 1.600,00</td>
+                            <td class="p-6 text-center font-bold text-xl text-white">R$ 1.360,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bg-slate-800/50 p-6 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-400">* O <strong class="text-white">Valor de Pontualidade</strong> é aplicado automaticamente para pagamentos realizados até o dia 15 de cada mês.</p>
+                <div class="flex gap-6 bg-slate-900 px-4 py-2 rounded-lg border border-slate-700">
+                    <div class="text-sm"><span class="text-slate-400">Artista Extra:</span> <strong class="text-white">R$ 100</strong></div>
+                    <div class="text-sm border-l border-slate-700 pl-6"><span class="text-slate-400">Usuário Extra:</span> <strong class="text-white">R$ 50</strong></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bônus & Onboarding -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Vantagens Extras -->
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i data-lucide="award" class="text-yellow-500 w-7 h-7"></i>
+                    Bônus por Crescimento
+                </h3>
+                <ul class="space-y-5 text-slate-300">
+                    <li class="flex items-start gap-4">
+                        <div class="bg-slate-800 p-2 rounded-lg shrink-0 mt-1 border border-slate-700">
+                            <i data-lucide="image" class="text-emerald-400 w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <strong class="text-white block text-lg mb-1">Planos acima de 5 artistas</strong>
+                            Ganham uma tela inicial personalizada com Logo e Capa da sua Produtora no Dashboard.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-slate-800 p-2 rounded-lg shrink-0 mt-1 border border-slate-700">
+                            <i data-lucide="code-2" class="text-emerald-400 w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <strong class="text-white block text-lg mb-1">Planos acima de 10 artistas</strong>
+                            Incluem banco de horas para alterações de aprimoramento e personalizações avançadas no software exclusivas para a sua agência.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Taxa de Setup -->
+            <div class="glass p-8 rounded-3xl bg-gradient-to-br from-blue-900/20 to-slate-900 border border-blue-500/20 relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-500/10 blur-[50px] rounded-full"></div>
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i data-lucide="rocket" class="text-blue-400 w-7 h-7"></i>
+                    Implantação do Sistema
+                </h3>
+                
+                <div class="space-y-4 relative z-10">
+                    <div class="p-5 rounded-2xl border border-slate-700 bg-slate-800/50 hover:bg-slate-800 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Opção 1: Self-Service</h4>
+                                <span class="text-xs text-slate-400 uppercase tracking-wider font-bold">Faça Você Mesmo</span>
+                            </div>
+                            <span class="text-emerald-400 font-bold bg-emerald-500/10 px-3 py-1 rounded-lg">R$ 0</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mt-3">Entregamos o sistema limpo. Você ou sua equipe assumem a responsabilidade de cadastrar artistas, usuários, configurar finanças e permissões.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl border border-blue-500/50 bg-blue-600/20 shadow-[0_0_30px_-5px_rgba(59,130,246,0.2)]">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Opção 2: Concierge Premium</h4>
+                                <span class="text-xs text-blue-300 uppercase tracking-wider font-bold">Chave na Mão (Recomendado)</span>
+                            </div>
+                            <span class="text-white font-bold bg-blue-600 px-3 py-1 rounded-lg shadow-lg">R$ 800 (Única)</span>
+                        </div>
+                        <p class="text-sm text-blue-100/70 mt-3">Não tem tempo? Envie suas planilhas e nós entregamos o sistema 100% configurado. Equipe, senhas, categorias e casting prontos para uso em 24h.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contato Footer -->
+    <section class="bg-[#0b1120] border-t border-slate-800 py-20 text-center px-4 relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-blue-600/10 blur-[100px] rounded-full pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Pronto para dar o próximo passo?</h2>
+            <p class="text-slate-400 text-lg mb-12">Entre em contato para agendar uma demonstração detalhada ou fechar o seu plano. Nossa equipe está pronta para te atender.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5562982053988" target="_blank" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-[#25D366]/30 flex items-center justify-center gap-3">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    Falar no WhatsApp
+                </a>
+                
+                <!-- Email -->
+                <a href="mailto:suporte@gstek.com.br" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all border border-slate-700 flex items-center justify-center gap-3">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                    suporte@gstek.com.br
+                </a>
+            </div>
+            <p class="text-sm text-slate-500 mt-12">GSTek © 2026. Soluções em Tecnologia.</p>
+        </div>
+    </section>
+
+    <script>
+        // Inicializa ícones
+        lucide.createIcons();
+    </script>
+</body>
+</html>
